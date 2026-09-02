@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mbam Jeremiah Chibuzor &amp; Co — Audit, Assurance &amp; Advisory</title>
+<link rel="icon" type="image/jpeg" href="MJC.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -74,7 +75,7 @@
   .nav-wrap.solid .nav-pill{background:rgba(250,247,240,.94);backdrop-filter:blur(20px) saturate(160%);-webkit-backdrop-filter:blur(20px) saturate(160%);box-shadow:0 8px 32px -12px rgba(16,29,56,.18);border:1px solid var(--line);}
   @media (max-width:640px){.nav-pill{padding:0 18px;}}
   .brand{display:flex;align-items:center;gap:12px;}
-  .brand-mark{width:42px;height:42px;border-radius:6px;border:1.5px solid var(--gold);background:var(--gold-pale);color:var(--gold-deep);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:14px;font-weight:700;flex-shrink:0;}
+  .brand-logo-img{width:40px;height:40px;border-radius:6px;border:1.5px solid var(--gold);object-fit:cover;background:#fff;flex-shrink:0;box-shadow:var(--shadow-sm);}
   .brand-name{font-family:'Fraunces',serif;font-size:15.5px;color:var(--navy);font-weight:600;line-height:1.2;text-align:left;}
   .brand-name small{display:block;font-family:'Inter',sans-serif;font-size:9px;color:var(--gold-deep);font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-top:2px;}
   .nav-links{display:flex;gap:28px;list-style:none;}
@@ -95,7 +96,7 @@
   .scrim{position:fixed;inset:0;background:rgba(10,19,38,.55);z-index:290;opacity:0;pointer-events:none;transition:opacity .3s;}
   .scrim.show{opacity:1;pointer-events:auto;}
 
-  /* ===== HERO (LIGHT THEMED ARCHITECTURAL) ===== */
+  /* ===== HERO (LIGHT-THEMED ARCHITECTURAL) ===== */
   .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;padding:120px 0 60px;background:var(--paper);}
   .hero-bg-img{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1800&auto=format&fit=crop') center 35%/cover;filter:contrast(1.02);opacity:.22;}
   .hero-bg-tint{position:absolute;inset:0;background:linear-gradient(180deg, rgba(250,247,240,0.85) 0%, rgba(250,247,240,0.7) 40%, rgba(250,247,240,0.98) 100%), radial-gradient(circle at 80% 20%, rgba(179,129,47,0.12), transparent 50%);}
@@ -124,7 +125,7 @@
   /* ===== FOUNDER NOTE ===== */
   .founder{display:grid;grid-template-columns:.7fr 1fr;gap:64px;align-items:center;}
   @media (max-width:860px){.founder{grid-template-columns:1fr;gap:36px;}}
-  .founder-photo{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-md);}
+  .founder-photo{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;box-shadow:var(--shadow-md);background:var(--paper-2);}
   .founder-photo img{width:100%;height:100%;object-fit:cover;}
   .founder-photo::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(16,29,56,.1);border-radius:var(--radius);}
   .founder-tag{position:absolute;left:18px;bottom:18px;background:rgba(250,247,240,.95);backdrop-filter:blur(10px);padding:12px 18px;border-radius:var(--radius-sm);box-shadow:var(--shadow-sm);border:1px solid var(--line);}
@@ -194,7 +195,7 @@
   @media (max-width:540px){.team-grid{grid-template-columns:1fr;}}
   .team-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:14px 14px 18px;box-shadow:var(--shadow-sm);transition:transform .3s var(--ease),box-shadow .3s var(--ease);}
   .team-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
-  .team-card .ph{border-radius:10px;overflow:hidden;aspect-ratio:3/3.6;margin-bottom:14px;}
+  .team-card .ph{border-radius:10px;overflow:hidden;aspect-ratio:3/3.6;margin-bottom:14px;background:var(--paper-2);}
   .team-card .ph img{width:100%;height:100%;object-fit:cover;}
   .team-card .name{font-family:'Fraunces',serif;font-size:16.5px;color:var(--navy);font-weight:600;}
   .team-card .role{font-size:12px;color:var(--ink-soft);margin-top:3px;}
@@ -227,6 +228,7 @@
   /* ===== FOOTER ===== */
   footer{padding:64px 0 30px;border-top:1px solid var(--line);background:var(--navy-deep);color:rgba(255,255,255,.62);}
   .foot-top{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:44px;}
+  .foot-logo-img{width:46px;height:46px;border-radius:6px;border:1px solid rgba(255,255,255,.2);object-fit:cover;background:#fff;margin-bottom:14px;}
   .foot-brand .brand-name{font-size:18px;color:#fff;}
   .foot-brand p{color:rgba(255,255,255,.5);font-size:13px;max-width:320px;margin-top:12px;line-height:1.7;}
   .foot-cols{display:flex;gap:64px;flex-wrap:wrap;}
@@ -252,7 +254,8 @@
   .gate-card{width:100%;max-width:420px;border-radius:var(--radius);padding:38px 34px;position:relative;background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow-lg);}
   .gate-close{position:absolute;top:16px;right:16px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line);background:var(--paper);color:var(--navy);display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:14px;}
   .gate-close:hover{background:var(--gold-pale);border-color:var(--gold);}
-  .gate-brand{display:flex;align-items:center;gap:10px;margin-bottom:24px;}
+  .gate-brand{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+  .gate-logo-img{width:36px;height:36px;border-radius:6px;border:1.5px solid var(--gold);object-fit:cover;background:#fff;flex-shrink:0;}
   .gate-tabs{display:flex;gap:4px;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-pill);padding:4px;margin-bottom:24px;}
   .gate-tabs button{flex:1;border:none;background:transparent;color:var(--ink-soft);padding:9px 0;border-radius:var(--radius-pill);font-size:12.5px;font-weight:600;cursor:pointer;transition:all .2s;}
   .gate-tabs button.active{background:var(--gold);color:var(--white);}
@@ -269,8 +272,8 @@
   /* ---- Portal workspace ---- */
   #portal{background:var(--paper);min-height:100vh;}
   .p-topbar{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.88);backdrop-filter:blur(20px);position:sticky;top:0;z-index:40;}
-  .p-topbar .p-brand{display:flex;align-items:center;gap:10px;cursor:pointer;color:var(--navy);}
-  .p-topbar .p-brand .mark{width:32px;height:32px;border:1.5px solid var(--gold);border-radius:4px;display:flex;align-items:center;justify-content:center;background:var(--gold-pale);font-family:'Fraunces',serif;font-weight:700;color:var(--gold-deep);font-size:11px;}
+  .p-topbar .p-brand{display:flex;align-items:center;gap:12px;cursor:pointer;color:var(--navy);}
+  .portal-logo-img{width:34px;height:34px;border-radius:5px;border:1.5px solid var(--gold);object-fit:cover;background:#fff;flex-shrink:0;}
   .p-topbar .p-brand .name{font-family:'Fraunces',serif;font-size:13.5px;color:var(--navy);text-align:left;line-height:1.2;font-weight:600;}
   .p-topbar .p-brand .name small{display:block;font-size:8.5px;letter-spacing:.18em;color:var(--gold-deep);text-transform:uppercase;margin-top:2px;font-family:'Inter',sans-serif;}
   .p-top-right{display:flex;align-items:center;gap:14px;}
@@ -403,7 +406,7 @@
   <div class="nav-wrap" id="navWrap">
     <div class="nav-pill">
       <a class="brand" href="#top">
-        <span class="brand-mark">MJC</span>
+        <img src="MJC.jpeg" alt="Mbam Jeremiah Chibuzor &amp; Co Logo" class="brand-logo-img">
         <span class="brand-name">Mbam Jeremiah Chibuzor &amp; Co<small>Audit · Assurance · Advisory</small></span>
       </a>
       <ul class="nav-links">
@@ -470,7 +473,7 @@
   <section id="about">
     <div class="wrap founder">
       <div class="founder-photo">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=900&auto=format&fit=crop" alt="Jeremiah Chibuzor Mbam, Founding & Managing Partner">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500' fill='%23F1EAD9'><rect width='400' height='500' fill='%23F1EAD9'/><circle cx='200' cy='180' r='68' fill='%23D5CABA'/><path d='M80 430c0-66 54-120 120-120s120 54 120 120z' fill='%23D5CABA'/><text x='50%25' y='465' font-family='sans-serif' font-size='11' font-weight='700' fill='%238C93A0' text-anchor='middle' letter-spacing='2'>EXECUTIVE PROFILE PENDING</text></svg>" alt="Jeremiah Chibuzor Mbam Profile Placeholder">
         <div class="founder-tag">
           <div class="n">Jeremiah Chibuzor Mbam</div>
           <div class="r">Founding &amp; Managing Partner</div>
@@ -627,19 +630,27 @@
       </div>
       <div class="team-grid reveal">
         <div class="team-card">
-          <div class="ph"><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=500&auto=format&fit=crop" alt="Ngozi Adaeze, Head of External Audit & Assurance"></div>
+          <div class="ph">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360' fill='%23F1EAD9'><rect width='300' height='360' fill='%23F1EAD9'/><circle cx='150' cy='130' r='52' fill='%23D5CABA'/><path d='M60 320c0-50 40-90 90-90s90 40 90 90z' fill='%23D5CABA'/><text x='50%25' y='340' font-family='sans-serif' font-size='9' font-weight='700' fill='%238C93A0' text-anchor='middle' letter-spacing='1.5'>PHOTO PENDING</text></svg>" alt="Ngozi Adaeze Profile Placeholder">
+          </div>
           <div class="name">Ngozi Adaeze</div><div class="role">Head, External Audit &amp; Assurance</div>
         </div>
         <div class="team-card">
-          <div class="ph"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=500&auto=format&fit=crop" alt="Tunde Bakare, Head of Tax"></div>
+          <div class="ph">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360' fill='%23F1EAD9'><rect width='300' height='360' fill='%23F1EAD9'/><circle cx='150' cy='130' r='52' fill='%23D5CABA'/><path d='M60 320c0-50 40-90 90-90s90 40 90 90z' fill='%23D5CABA'/><text x='50%25' y='340' font-family='sans-serif' font-size='9' font-weight='700' fill='%238C93A0' text-anchor='middle' letter-spacing='1.5'>PHOTO PENDING</text></svg>" alt="Tunde Bakare Profile Placeholder">
+          </div>
           <div class="name">Tunde Bakare</div><div class="role">Head, Tax</div>
         </div>
         <div class="team-card">
-          <div class="ph"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=500&auto=format&fit=crop" alt="Aisha Mohammed, Head of Advisory & Consulting"></div>
+          <div class="ph">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360' fill='%23F1EAD9'><rect width='300' height='360' fill='%23F1EAD9'/><circle cx='150' cy='130' r='52' fill='%23D5CABA'/><path d='M60 320c0-50 40-90 90-90s90 40 90 90z' fill='%23D5CABA'/><text x='50%25' y='340' font-family='sans-serif' font-size='9' font-weight='700' fill='%238C93A0' text-anchor='middle' letter-spacing='1.5'>PHOTO PENDING</text></svg>" alt="Aisha Mohammed Profile Placeholder">
+          </div>
           <div class="name">Aisha Mohammed</div><div class="role">Head, Advisory &amp; Consulting</div>
         </div>
         <div class="team-card">
-          <div class="ph"><img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=500&auto=format&fit=crop" alt="Chuka Eze, Head of Forensic Audit"></div>
+          <div class="ph">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 360' fill='%23F1EAD9'><rect width='300' height='360' fill='%23F1EAD9'/><circle cx='150' cy='130' r='52' fill='%23D5CABA'/><path d='M60 320c0-50 40-90 90-90s90 40 90 90z' fill='%23D5CABA'/><text x='50%25' y='340' font-family='sans-serif' font-size='9' font-weight='700' fill='%238C93A0' text-anchor='middle' letter-spacing='1.5'>PHOTO PENDING</text></svg>" alt="Chuka Eze Profile Placeholder">
+          </div>
           <div class="name">Chuka Eze</div><div class="role">Head, Forensic Audit</div>
         </div>
       </div>
@@ -705,6 +716,7 @@
     <div class="wrap">
       <div class="foot-top">
         <div class="foot-brand">
+          <img src="MJC.jpeg" alt="MJC &amp; Co" class="foot-logo-img">
           <span class="brand-name serif">Mbam Jeremiah Chibuzor &amp; Co</span>
           <p>A chartered audit, assurance, and advisory practice based in Abuja, Nigeria. Design prototype — content shown is illustrative pending final sign-off.</p>
         </div>
@@ -732,7 +744,7 @@
   <div class="gate-card">
     <button class="gate-close" onclick="closeGate()" aria-label="Close">✕</button>
     <div class="gate-brand">
-      <span class="brand-mark" style="width:34px;height:34px;font-size:11px;">MJC</span>
+      <img src="MJC.jpeg" alt="MJC &amp; Co" class="gate-logo-img">
       <span style="font-family:'Fraunces',serif;color:var(--navy);font-size:15px;font-weight:600;">Client Portal</span>
     </div>
     <div class="gate-tabs">
@@ -762,7 +774,7 @@
 <div id="portal">
   <div class="p-topbar">
     <button class="p-brand" onclick="exitPortal()">
-      <span class="mark">MJC</span>
+      <img src="MJC.jpeg" alt="MJC &amp; Co" class="portal-logo-img">
       <span class="name">MJC &amp; Co<small>Client Portal</small></span>
     </button>
     <div class="p-top-right">
